@@ -103,7 +103,7 @@ body {
     border: none;
     border-radius: 0 0 25px 25px;
     width: 40px;
-    height: 50px;
+    height: 40px;
     
 
 }
@@ -348,4 +348,70 @@ h4{
 }
 .texte h1,.texte1 h1{
     color: #ee1d48;
+}
+.découv{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+
+}
+.image35{
+    filter: brightness(40%);
+    width: 100%;
+    height: 90%;
+    display: block;
+}
+.texte_découv{
+    position: absolute;
+    top: 60px; /* Ajuste la position verticale */
+    right: 650px; /* Ajuste la position horizontale*/
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+.découv1{
+    font-size: 90px;
+}
+.découv2{
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.bande-rouge{
+    position: absolute;
+    background-color:rgb(194, 10, 10);
+    width: 92%;
+    height: 40%;
+    display: flex;
+    text-align: center;
+    top: 500px;
+    right:100px;
+    padding: 9px;
+    padding-top: 3px;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+}
+.état1{
+    position: relative;
+    display: inline-block;
+    left: auto;  
+}
+.état2{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto; 
+}
+.état3{
+    position: relative;
+    display: inline-block;
+    right: auto; 
+}
+.état_quantitativ{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.état_qualitativ{
+    font-size: 25px;
+    color: white;
+    padding-top: -10px;
 }
