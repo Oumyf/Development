@@ -1,8 +1,18 @@
+/* The above code is a CSS stylesheet that defines the styling for a webpage. It includes various
+styles for different elements such as the body, navigation bar, sections, buttons, images, and text.
+The code sets properties such as font-family, font-size, color, background-color, margin, padding,
+border, and positioning to create the desired visual appearance of the webpage. */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=Nunito+Sans:opsz@6..12&family=Nunito:wght@400;600&family=Roboto+Slab:wght@600&display=swap');
+
+body{
+    margin: 0px;
+    
+}
 *, *::before, *::after{
     box-sizing: border-box;
 }
 body {
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: normal;
     font-style: normal; 
     font-family: Arial, sans-serif;
@@ -12,16 +22,12 @@ body {
 .section1{
     display: flex;
 }
-/* .ban{
-    position: absolute;
-    width: 100%;
 
-} */
 .logo img{
     display: block;
     font-size: 24px;
     margin-bottom: 40px;
-    margin-left: 30px;
+    margin-left: 40px;
     margin-top: 50px;
     text-decoration: none;
     height: 50px;
@@ -35,16 +41,19 @@ nav {
 
 nav ul {
     list-style-type: none;
-    margin: 50px 0 0 300px;
+    margin: 50px 0 0 10px;
     padding: 0;
     overflow: hidden;
 }
 
 nav li {
     float: left;
+    font-size: 10px;
+    margin: 0px 0 0 5px;
+
 }
 .home{
-    border-bottom: #ee1d48 solid 3px;
+    border-bottom: #cf3034 solid 3px;
 }
 .search-icon{
     margin: 5px;
@@ -53,6 +62,7 @@ nav li {
 }
 
 nav li a, .dropbtn {
+    font-size: 16px;
     font-weight:bold;
     display: inline-block;
     color: #101820;
@@ -89,7 +99,7 @@ nav li.dropdown {
     background-color: red;
 } */
 .dropdown .dropbtn {
-    color: #ff0000; /* Rouge pour la flèche au survol */
+    color: #cf3034; 
     
 }
 
@@ -97,12 +107,14 @@ nav li.dropdown {
     display: block;
 }
 .section1 .contact{
-    background-color: #ff0000;
-    border: 1px solid #ff0000;
-    border-radius: 15px;
+    margin-left: 40px;
+    background-color: #cf3034;
+    border: 1px solid #cf3034;
+    border-radius: 30px;
 
 }
 nav li:last-child a {
+    font-size: 12px;
     color: white; /* Couleur blanche pour le texte "Contact" */
 }
 
@@ -112,18 +124,48 @@ nav li:last-child a {
     font-weight: normal;
     font-style: normal; 
 } */
-.banière{
-    position: relative;
+.baniere{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('Images/26.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+   backdrop-filter:  filter brightness(70%)
+}
+.contenaire-texte-2-baniere{
+    height: 100%px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    font-weight: 800;
+    color: #FFF;
+    margin-top: 300px;
+    padding: 12px;
+    margin-bottom: -150px;
+    background: #cf3034;
+    backdrop-filter: 0.6 black; opacity: 0.5;
+    display: flex;
+    justify-content: space-between;
+}
+.trait span{
+    width: 4px;
+    height: 100px;
+    background: #FFF;
+    color: #FFF;
+    margin: 0px;
 }
 .image26{
-    filter: brightness(70%);
+    
     width: 100%;
     height: 600px;
     display: block;
 }
 .texte_description{
-    position: absolute;
     bottom: 50px; /* Ajuste la position verticale */
     right: 50%; /* Ajuste la position horizontale*/
     padding: 20px;
@@ -168,10 +210,10 @@ nav li:last-child a {
 
 
 .point{
-    background-color: #ee1d48;
+    background-color: #cf3034;
     width: 10px;
     height: 10px;
-    border: #ee1d48 1px solid;
+    border: #cf3034 1px solid;
     border-radius: 15px;
     margin-top: 299px;
 }
@@ -182,8 +224,8 @@ nav li:last-child a {
 .trait{
     width: 30px;
     height: 8px;
-    background-color: #ee1d48;
-    border: #ee1d48 1px solid;
+    background-color: #cf3034;
+    border: #cf3034 1px solid;
     border-radius: 10Px;
     margin-top: 299px;
     margin-left: 10px;
@@ -191,23 +233,25 @@ nav li:last-child a {
 
 #petitehistoire{
     text-align: center;
-    color: #ee1d48;
+    color: #cf3034;
     margin-top: 10vh;
     margin-bottom: 2vh;
 }
 
 .petitehistoire{
+    width: 100%;
+    height: 60vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 100px;
     padding: 5vh 2vh 2vh 5vh;
-    background-color: #D3D3D3;
-    margin-left:150px;
-    margin-right: 150px;
+    background-color: #F3F3F3;
+    margin-left:0px;
+    margin-right: 0px;
 }
 .video{
-    margin-top: 60px;
-    margin-left: 150px;
+    margin-top: 0px;
+    margin-left: 0px;
     height: 300px;
     width: 500px;
 
@@ -217,7 +261,7 @@ nav li:last-child a {
     height: 20px;
     width: 60px;
     color: #FFF;
-    background-color: #ee1d48;
+    background-color: #cf3034;
     transform: translate(-50%, -50%);
     margin-top: -50px;
     margin-left: 300px;
@@ -230,32 +274,36 @@ nav li:last-child a {
 }
 
 
-#apprenant,#apprenant1{
-    height: 350px;
+#apprenant{
+    width: 100%;
+}
+    #apprenant1{
+    height: 100%;
 }
 #apprenant1{
-    width: 450px;
+    width: 90%;
 
 }
-h4{
-    font-size: large;
+.petitehistoire h4{
+    font-size: 30px;
     position: absolute;
-    background-color: #ee1d48;
+    background-color: #cf3034;
     color: #FFF;
-    width: 100px;
+    width: 140px;
     height: 50px;
+    border-radius: 12px 0 0 0;
     padding-left: 42px;
     padding-right: 72px;
-    padding-top: 15px;
-    margin-left: 48vh;
-    border: #ee1d48 1px solid;
+    padding-top: 5px;
+    margin-left: 310px;
+    border: #cf3034 1px solid;
 
 }
 .video p:last-child{
     margin-top: 20px;
     font-weight: bolder;
     font-size: larger;
-    border-top: #ee1d48 7px solid;
+    border-top: #cf3034 7px solid;
 }
 
 .texte1{
@@ -263,19 +311,34 @@ h4{
     margin-top: 20px;
     font-size: larger;
     line-height: 1.5;
+    text-align: center;
 }
 .texte h1,.texte1 h1{
-    color: #ee1d48;
+    color: #cf3034;
 }
 .rafetal{
+    background: #F3F3F3;
+    margin-top: -10px;
     display: flex;
-    margin-left: 100vh;
+    justify-content: center;
+}
+.rafetal2{
+    background: #F3F3F3;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+.rafetal3{
+    background: #F3F3F3;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 .point{
-    background-color: #ee1d48;
-    width: 2vh;
-    height: 2vh;
-    border: #ee1d48 1px solid;
+    background-color: #cf3034;
+    width: 1vh;
+    height: 1vh;
+    border: #cf3034 1px solid;
     border-radius: 15px;
     margin-top: -5vh;
 }
@@ -284,10 +347,10 @@ h4{
 
 }
 .trait{
-    width: 30px;
-    height: 10px;
-    background-color: #ee1d48;
-    border: #ee1d48 1px solid;
+    width: 5vh;
+    height: 1vhd;
+    background-color: #cf3034;
+    border: #cf3034 1px solid;
     border-radius: 10Px;
     margin-top: -4.75vh;
     margin-left: 10px;
@@ -300,6 +363,9 @@ h4{
     margin-left:10px;
     margin-right: 150px;
 }
+#apprenant2{
+    width: 500px;
+}
 
 #apprenant2{
     width: 500px;
@@ -308,18 +374,315 @@ h4{
     margin-top: 2px;
 }
 .peda{
-    color: #ee1d48;
+    margin-top: 70px;
+    color: #cf3034;
     text-align: center;
 }
 .texte2 h2,.texte2 h3{
-    color: #ee1d48;
+    color: #cf3034;
 }
-.texte2{
+.texte2 {
     margin-left: 150px;
-    margin-top: 50px;
-    font-size: larger;
+    margin-top: -20px;
     line-height: 1.5;
 }
+.texte3 {
+    margin-left: 150px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.texte3 h2{
+    color: #cf3034;
+}
+/* Styles pour les boîtes avec chiffres et lettres */
+.pilier {
+    display: flex;
+    justify-content: space-around;
+        margin-left: -200px;
+
+   
+}
+
+.container-box {
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box {
+    width: 300px;
+    height: 180px;
+    justify-content: center;
+    border-bottom: solid #cf3034 5px;
+    margin: 5px 5px 5px 5px;
+    padding: 3px 3px 3px 3px;
+    box-shadow: 4px 4px 4px 4px rgba(62, 58, 58, 0.1);
+}
+.box img{
+    width: 50px;
+}
+
+.deux-contenue {
+    width:auto;
+    display: flex;
+    margin: 0px;
+}
+.image {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    border-radius: px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 4px rgba(62, 58, 58, 0.1);
+    margin-bottom: 40px;
+}
+
+
+.image img {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+.p6 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    color: #cf3034;
+    margin-left: 100px;
+    font-size: #cfcfcf;
+    font-family: var(--police-body);
+}
+
+
+
+/* Styles pour la section "Valeur" */
+.veleur-content {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+
+.div-un {
+    margin-top: 30px;
+    width: 600px;
+    margin-left: 100px;
+    padding-right: 20px;
+}
+ .paragraphe  {
+   
+    font-size: 18px;
+    text-align: left;
+    line-height: 2.5;font-weight: bold;
+}
+.shadow{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 120px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px 2px rgba(185, 182, 182, 0.499);
+}
+
+.div-un button {
+    margin-top: 50px;
+    width: 137px;
+    height: 41px;
+    font-size: 18px;
+    background-color: #cf3034;
+    border-radius: 50px;
+    border-color: #FAFAFA;
+    color: #FAFAFA;
+}
+
+.div-deux {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 10fr;
+    width: 450px;
+    margin-left: 80px;
+}
+
+.valeur {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 4fr ;
+}
+
+.valeurs .h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-style: bold;
+    color: #cf3034;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.valeurs h1 {
+    font-size: 2.5rem;
+    font-style: bold;
+    color: #cf3034;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.valeurs p {
+    font-variant-numeric: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.chiffre h2 {
+    margin-top: 25px;
+    padding-top: 10px;
+    color: #cf3034;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F6D1DA;
+    margin-right: 30px;
+    margin-left: -30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.lettre {
+    display: flex;
+    width: 00px;
+    padding: auto;
+}
+
+.Noschiffre {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url('Images/arriere_plan.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Noschiffre h1 {
+    color: #FAFAFA;
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+}
+
+.Noschiffre p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #FAFAFA;
+}
+
+#H1 {
+    display: flex;
+    font-size: 30px;
+    color: #cf3034;
+    justify-content: center;
+}
+.rejoindre{
+    display: flex;
+    justify-content: space-evenly;
+}
+.rejoindre .texte-contenu{
+    margin-left: 30px;
+    margin-right: 30px;
+   
+}
+.rejoindre .texte-contenu h1{
+    margin-top: 4px;
+    font-size: 22px;
+   color: #ce0033;
+    line-height: 2;
+}
+.offre-info .trait{
+    margin-left: 500px;
+    margin-top: 30px;
+    width: 30px;
+    height: 8px;
+    background: #cf3034;
+}
+.rejoindre .texte-contenu p{
+   text-align: left;
+    line-height: 2.2;
+}
+.rejoindre .video{
+    margin-left: 60px;
+}
+
+/* Styles pour la section "Équipe" */
+.equipe {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 0px;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.card h3 {
+    
+    font-size: 20px;
+    color: #cf3034;
+}
+
+.card p {
+
+    margin-top: 30px;
+    color: gray;
+}
+
+.social {
+    margin-top: 10px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.social img {
+    color: #ce0033;
+    border-radius: 0%;
+    margin-left: 10px;
+    margin-right: 10px;
+    width:auto;
+}
+
+#P1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .equipe{
     background-color: rgb(250, 250, 250);
@@ -351,13 +714,1104 @@ box-shadow: 5px 5px 10px 0px white;
     padding-right: 20px;
     margin-left: 20px;
 }
-.image{
-    width: 180px;
-    border-radius: 200px;
 
-}
 
 #form1{
     margin-top: 15px;
 }
+.quote{
+    border-radius: 0%;
+}
 
+
+/* Styles pour la section "Partenaires" */
+.partenaire {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.partenaires {
+    margin-left: 80px;
+    margin-right: 80px;
+    display: grid;
+}
+.partenaires img {
+   width: 100;
+   margin: 0px;
+   height: 80px;
+
+}
+/* Code candidature */
+.candidature .shadow{
+    width: 400px;
+}
+
+.candidature {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.candidature{
+
+    display: flex;
+    justify-content: center;
+}
+.chiffre1 h2 {
+    margin-top: 25px;
+    padding-top: 15px;
+    color: #F3F3F3;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #d61742;
+    margin-right: 30px;
+    margin-left: -30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.chiffre2 h2 {
+    margin-top: 25px;
+    padding-top: 15px;
+    color: #F3F3F3;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #f5b500;
+    margin-right: 30px;
+    margin-left: -30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.chiffre3 h2 {
+    margin-top: 25px;
+    padding-top: 15px;
+    color: #F3F3F3;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #f22000;
+    margin-right: 30px;
+    margin-left: -30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.chiffre4 h2 {
+    margin-top: 25px;
+    padding-top: 15px;
+    color: #F3F3F3;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #3278ab;
+    margin-right: 30px;
+    margin-left: -30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.chiffre6 h2 {
+    margin-top: 25px;
+    padding-top: 15px;
+    color: #F3F3F3;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #2b9844;
+    margin-right: 30px;
+    margin-left: -30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+/* code temoignage */
+.temoignage{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.temoignage .card1{
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: left;
+    border-radius: 10px;
+    width: 500px;
+    padding: 10px 10px 10px 10px;
+}
+.temoignage .card1 .photo-temoin{
+    border-radius: 50%;
+    width: 130px;
+    margin-left: 60px;
+}
+.temoignage h1{
+    font-size: 22px;
+    font-weight: 100;
+    margin-left: 30px;
+}
+.temoignage p{
+    color: #c5c5c5;
+    margin-left: 30px;
+    margin-top: -14px;
+    line-height: 2.5;
+}
+
+/* Styles pour la section "Recrutement" */
+.recrutement {
+    margin-top: 60px;
+    margin-left: 00px;
+    width: 600px;
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+.recrutement .partie-1 {
+    width: 600px;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+.recrutement .partie-1 button{
+    margin-left: 190px;
+    color: #F3F3F3;
+}
+.recrutement .partie-2 button{
+    color: #F3F3F3;
+}
+.partie-1 img {
+    background-color: #8e1919;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 700px;
+}
+
+.offre {
+    display: flex;
+}
+
+form {
+    display: grid;
+    margin-right: 100px;
+    grid-template-columns: 6fr;
+}
+
+.form1 {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form2 {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form1 input {
+    width: 250px;
+    height: 80px;
+    padding-left: 1;
+    margin-right: 20px;
+    border: solid #F3F3F3 1px;
+}
+
+.form2 input {
+    width: 250px;
+    height: 80px;
+    margin-right: 20px;
+    border: solid #F3F3F3 1px;
+}
+
+.iconify-icon {
+    color: #ce0033;
+    margin-left: 300px;
+}
+
+.partie-1 h1 {
+    font-size: 30px;
+    border-top: 3px solid #ce0033;
+    border-bottom: 3px solid #ce0033;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.partie-1 h3 {
+    display: flex;
+    justify-content: right;
+    font-size: 25px !important;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px !important;
+}
+.offre-info{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.recrutement h1{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.offre-info h2 {
+    text-align: left;
+    border-bottom: 1px solid #ce0033;
+    font-size: 40px;
+    color: #ce0033;
+}
+
+.offre-info p {
+    font-size: 20px;
+}
+
+.offre-info h4 {
+    color: #ce0033;
+    font-size: 20px;
+}
+.recrutement .partie-1{
+    background: #f4efef;
+}
+.partie-1 button {
+    margin-top: 30px;
+    margin-left: 50%;
+    color: #F3F3F3 ;
+    font-size: 20px;
+    background-color: #ce0033;
+    border: 0.1px solid transparent;
+    border-radius: 35px;
+    width: 140px;
+    height: 50px;
+}
+
+.offre-details {
+    border-radius: 10%;
+    position: absolute;
+    background: #FAFAFA;
+    width: 15%;
+    height:25%;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 160px;
+    margin: right 0;
+    margin-left: 350px;
+}
+
+.offre-details iconify-icon {
+    width: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
+    margin-top: -16px;
+    font-size: 16px;
+}
+
+.partie-2 h1 {
+
+    margin-top: 50px;
+    font-size: 30px;
+    color: #ce0033;
+}
+
+.partie-2 {
+    margin-left: 50px;
+}
+
+.fichier {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #ce0033;
+}
+
+.partie-2 p {
+    width: 500px;
+    height: 500px;
+    font-size: 18px;
+}
+
+.message textarea {
+    width: 540px;
+    height: 200px;
+    margin-left: 20px;
+    border: solid gray 3px;
+    margin-top: 20px;
+}
+
+.accord {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn {
+    display: flex;
+    margin-left: 20px;
+}
+.shadow{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    box-shadow: 0px 1px 1px 1px rgba(130, 128, 128, 0.499);
+
+}
+.btn input {
+    width: 200px;
+    height: 50px;
+    border: 0.1px solid transparent;
+    border-radius: 35px;
+    color: #F3F3F3 ;
+    font-size: 18px;
+    background-color: #ce0033;
+}
+
+/* code footer */
+
+footer {
+    
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-image: url('Images/fabrique/image_footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.carte2 {
+    display: grid;
+}
+
+.carte1 {
+    display: grid;
+}
+
+.carte2 a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+a:hover {
+    color: #cf3034;
+}
+
+.social1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.social1 img{
+    margin: 10px;
+}
+
+.carte3 p {
+    font-size: 20px;
+}
+
+/* .carte4 p {
+    width: 100%;
+    font-size: 18px;
+} */
+
+.Newsletter {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.img-youtube{
+    width: 36px;
+    height: 26px;
+}
+.Newsletter .input {
+    background-color: #ffff;
+    border-radius: 15px 0px 0px 15px;
+    margin-right: 0px;
+    padding-right: 8px;
+    width: 200px;
+    height: 50px;
+}
+
+.Newsletter input {
+    font-size: 18px;
+    color: #ffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px transparent;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #cf3034;
+    width: 100px;
+    height: 50px;
+}
+.rejoindr{
+    margin-left: -10px;
+}
+/* .rejoindre value{
+    margin-left: -10px;
+} */
+.copy {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    background-color: #cf3034;
+}
+
+/* Code responsive */
+@media screen and (max-width: 912px) {
+    html{
+        width: 100%;
+    }
+    
+    body{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #petitehistoire{
+        text-align: center;
+        color: #cf3034;
+        margin-top: 150px;
+        margin-bottom: 2vh;
+    }
+    .elements-contenaire{
+        width: 50%;
+    }
+    .section1 {
+        
+        margin: 0px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 70%;
+      align-items: center;
+    }
+    nav{
+        display: grid;
+        grid-template: 4fr 4fr 4fr 4fr 4fr;
+    }
+    nav ul {
+      flex-direction: row;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .section1 .contact{
+        visibility: hidden;
+        margin-left: 5px;
+        background-color: #cf3034;
+        border: 1px solid #cf3034;
+        border-radius: 30px;
+    
+    }
+  
+    .baniere {
+        width:auto ;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      flex-direction:row;
+      flex-wrap: wrap;
+    }
+    .baniere .texte_description h1{
+        padding-top: 20%;
+        font-size: 62px;
+        margin-top: 150px;
+    }
+      .Noschiffre, .equipe,  .temoignage {
+      padding: 30px 10px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .pedagogie{
+        display: flex;
+        align-items: center;
+    }.pedagogie:first-child{
+        margin: 40px;
+    }
+    .pedagogie:last-child{
+        margin-top: 50px;
+    }
+
+    .petitehistoire{
+        width: 100%;
+        margin: 0px;
+        display: grid;
+        grid-template: 2fr;
+        align-items: left;
+    }
+    .petitehistoire .texte1{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+        font-size: larger;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .video{
+        margin: 1px;
+    }
+    .pilier{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+    .container-box{
+        margin: 0px;
+        width: 90%;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #apprenant{
+        width: 100%;
+        margin-bottom: 10%;
+
+    }
+        #apprenant1{
+            width: 90%;
+            margin-top: 5%;
+            margin-bottom: 10%;
+            height: 100%;
+    }
+    
+
+    .box{
+        width: 70%;
+    }
+    .deux-contenue{
+        margin-left: 20px;
+    }
+    .div-deux {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 10fr;
+        width: 450px;
+        margin-left: 80px;
+    }
+    .valeurs{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .pedagogie{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .texte2 {
+        width: 80%;
+        margin-left: 0px;
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+    .veleur-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
+    }
+    .temoignage .card1{
+            width: 100%;
+             display: flex;
+             align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        
+
+    }
+  
+    .recrutement{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .rejoindre{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .candidature{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }.partenaire{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .partenaire  img{
+    margin: 40px;
+    width: 40%;
+    height: 100%;
+    }
+    footer{
+        font-size: 26px;
+        width: 100%;
+        padding: 10px;
+         display: flex;
+         align-items: left;
+        justify-content: center;
+        flex-direction: column;
+    }
+    /* .carte1{
+        width: 100%;
+         display: flex;
+         align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }*/
+    /* .carte2{
+        
+            width: 100%;
+             display: flex;
+             align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+    } */
+    
+
+    
+    .carte1{
+        width: 100%;
+         display: flex;
+         align-items: center;
+        display: grid;
+        
+    }
+    .carte2{
+        width: 100%;
+         display: flex;
+         align-items: center;
+        display: grid;
+        
+    }
+    .carte3{
+        width: 100%;
+        display: flex;
+        align-items: center;
+       display: grid;
+    }
+    .carte4{
+        width: 100%;
+         display: flex;
+         align-items: center;
+        display: grid;
+        grid-template: auto;
+}
+
+    .logo-simplon{
+        margin: 30px;
+        width: 40%;
+        justify-content: center;
+
+    }
+    .Noschiffre {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-image: url('Images/arriere_plan.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .equipe {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .equipe .card{
+        width: 70%;
+        height: 500px;
+        margin: 20px;
+    }
+    .p6 {
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        align-items: center;
+        margin-bottom: 80px;
+        display: flex;
+        color: #cf3034;
+        margin-left:0px;
+        font: size 12px;;
+        
+    }
+    .copy {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #ffff;
+        display: flex;
+        justify-content: space-between;
+        background-color: #cf3034;
+    }
+    .recrutement .partie-1{
+        margin-left: -0px;
+    }
+    .offre-details {
+        border-radius: 10%;
+        position: absolute;
+        background: #FAFAFA;
+        width: 20%;
+        height:15%;
+        display: flex;
+        padding-top: 10px;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 160px;
+        margin: right 0;
+        margin-left: 350px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    html{
+        width: 100%;
+    }
+    body{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        font-size: medium;
+    }
+    
+    #petitehistoire{
+        text-align: center;
+        color: #cf3034;
+        margin-top: 150px;
+        margin-bottom: 2vh;
+    }
+    .elements-contenaire{
+        width: 50%;
+    }
+    .section1 {
+        
+        margin: 0px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 70%;
+      align-items: center;
+    }
+    nav{
+        display: grid;
+        grid-template: 4fr 4fr 4fr 4fr 4fr;
+    }
+    nav ul {
+      flex-direction: row;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .section1 .contact{
+        visibility: hidden;
+        margin-left: 5px;
+        background-color: #cf3034;
+        border: 1px solid #cf3034;
+        border-radius: 30px;
+    
+    }
+  
+    .baniere {
+        width:auto ;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      flex-direction:row;
+      flex-wrap: wrap;
+    }
+    .baniere .texte_description h1{
+        padding-top: 20%;
+        font-size: 62px;
+        margin-top: 150px;
+    }
+      .Noschiffre, .equipe,  .temoignage {
+      padding: 30px 10px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .pedagogie{
+        display: flex;
+        align-items: center;
+    }.pedagogie:first-child{
+        margin: 40px;
+    }
+    .pedagogie:last-child{
+        margin-top: 50px;
+    }
+
+    .petitehistoire{
+        width: 100%;
+        margin: 0px;
+        display: grid;
+        grid-template: 2fr;
+        align-items: left;
+    }
+    .petitehistoire .texte1{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+        font-size: larger;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .video{
+        margin: 1px;
+    }
+    .pilier{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+    .container-box{
+        margin: 0px;
+        width: 90%;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #apprenant{
+        width: 100%;
+        margin-bottom: 10%;
+
+    }
+        #apprenant1{
+            width: 90%;
+            margin-top: 5%;
+            margin-bottom: 10%;
+            height: 100%;
+    }
+    
+
+    .box{
+        width: 70%;
+    }
+    .deux-contenue{
+        margin-left: 20px;
+    }
+    .div-deux {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 10fr;
+        width: 450px;
+        margin-left: 80px;
+    }
+    .valeurs{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .pedagogie{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .texte2 {
+        width: 80%;
+        margin-left: 0px;
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+    .veleur-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
+    }
+    .temoignage .card1{
+            width: 100%;
+             display: flex;
+             align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        
+
+    }
+  
+    .recrutement{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .rejoindre{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .candidature{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }.partenaire{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .partenaire  img{
+    margin: 40px;
+    width: 40%;
+    height: 100%;
+    }
+    footer{
+        font-size: 26px;
+        width: 100%;
+        padding: 10px;
+         display: flex;
+         align-items: left;
+        justify-content: center;
+        flex-direction: column;
+    }
+    /* .carte1{
+        width: 100%;
+         display: flex;
+         align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }*/
+    /* .carte2{
+        
+            width: 100%;
+             display: flex;
+             align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+    } */
+    
+
+    
+    .carte1{
+        width: 100%;
+         display: flex;
+         align-items: center;
+        display: grid;
+        
+    }
+    .carte2{
+        width: 100%;
+         display: flex;
+         align-items: center;
+        display: grid;
+        
+    }
+    .carte3{
+        width: 100%;
+        display: flex;
+        align-items: center;
+       display: grid;
+    }
+    .carte4{
+        width: 100%;
+         display: flex;
+         align-items: center;
+        display: grid;
+        grid-template: auto;
+}
+
+    .logo-simplon{
+        margin: 30px;
+        width: 40%;
+        justify-content: center;
+
+    }
+    .Noschiffre {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-image: url('Images/arriere_plan.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .equipe {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .equipe .card{
+        width: 70%;
+        height: 500px;
+        margin: 20px;
+    }
+    .p6 {
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        align-items: center;
+        margin-bottom: 80px;
+        display: flex;
+        color: #cf3034;
+        margin-left:0px;
+        font: size 12px;;
+        
+    }
+    .copy {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #ffff;
+        display: flex;
+        justify-content: space-between;
+        background-color: #cf3034;
+    }
+    .recrutement .partie-1{
+        margin-left: -0px;
+    }
+    .offre-details {
+        border-radius: 10%;
+        position: absolute;
+        background: #FAFAFA;
+        width: 20%;
+        height:15%;
+        display: flex;
+        padding-top: 10px;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 160px;
+        margin: right 0;
+        margin-left: 350px;
+    }
+
+}
